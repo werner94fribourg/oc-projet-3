@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  },
+  "name": "oc-projet-3",
+  "description": "Projet 3 - Dynamisez une page web avec des animations CSS",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./scss/styles.scss:./css/styles.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/werner94fribourg/oc-projet-3.git"
+  },
+  "author": "Werner Schmid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/werner94fribourg/oc-projet-3/issues"
+  },
+  "homepage": "https://github.com/werner94fribourg/oc-projet-3#readme"
+}
