@@ -1,0 +1,20 @@
+* {
+  box-sizing: inherit;
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
+}
+
+.title {
+  font-family: "Shrikhand", cursive !important;
+}
+
+html {
+  font-size: 100%; //1rem : 16px
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
