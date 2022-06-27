@@ -1,0 +1,62 @@
+/*
+min-width and max-widht breakpoint mixins definition
+    $break-value : min/max value for which the mixin will be applie in em
+*/
+/*
+Media Query Manager using a mobile-first approach
+Media queries defined in rem and px can have some bugs on Safari. It's why we use em units in media queries since it works every where
+1em : 16px => default browser font-size, which is not relative
+A media query isn't affected by the change of the user's font-size
+Normal CSS without media queries begins to apply for phone
+$breakpoint values :
+    - tab-port (min-width: 600px, i.e. 37.5em)
+    - tab-land (min-width : 900px, i.e. 56.25em)
+    - laptop (min-width : 1200px, i.e. 75em)
+    - desk-comp (min-width: 1800px, i.e. 112.5em)
+*/
+* {
+  box-sizing: inherit;
+}
+*::after, *::before {
+  box-sizing: inherit;
+}
+
+.title {
+  font-family: "Shrikhand", cursive !important;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  padding: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.header__index-link {
+  display: inline-block;
+  padding: 1rem;
+  position: absolute;
+  left: 2.5%;
+}
+@media only screen and (max-width: 17.2em) {
+  .header__index-link {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.header__index-link-placeholder {
+  display: inline-block;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
