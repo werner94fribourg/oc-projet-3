@@ -26,26 +26,21 @@
       />
     </header>
     <main class="main">
-      <section class="main__search">
-        <form class="search__form">
-          <div class="search__input">
-            <label for="location">
+      <section class="section-search">
+        <form class="section-search__form">
+          <div class="section-search__input">
+            <label class="section-search__input-label" for="location">
               <i class="fa-solid fa-location-dot"></i>
-              <input
-                type="text"
-                name="location"
-                placeholder="Paris, Belleville"
-                value=""
-              />
             </label>
+            <input class="section-search__input-field" type="text" name="location" placeholder="Paris, Belleville" value="" />
           </div>
-          <div class="search__title">
+          <div class="section-search__title">
             <h1>Réservez le menu qui vous convient</h1>
             <p>
               Découvrez des restaurants d'exception, sélectionnés par nos soins.
             </p>
           </div>
-          <button class="search__submit" type="submit">
+          <button class="btn" type="submit">
             Explorer nos restaurants
           </button>
         </form>

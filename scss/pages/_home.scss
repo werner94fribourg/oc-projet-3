@@ -1,0 +1,41 @@
+.section-search {
+  background-color: $color-grey-light;
+  &__form {
+  }
+  &__input {
+    background-color: $color-grey-dark;
+    text-align: center;
+    color: $color-black-2;
+    position: relative;
+    padding: 1.7rem;
+  }
+  &__input-label {
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-620%);
+  }
+  &__input-field {
+    border: none;
+    background-color: $color-grey-dark;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-25%);
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $color-black-2;
+    }
+    &:focus::placeholder {
+      color: $color-grey-light;
+    }
+  }
+  &__title {
+  }
+}

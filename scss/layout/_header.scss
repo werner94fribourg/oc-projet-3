@@ -4,6 +4,10 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  background-color: $color-white;
+  box-shadow: 0 0 0.5rem rgba($color-black-1, 0.4);
+  position: relative;
+  z-index: 1;
   &__img {
   }
   &__index-link {
