@@ -1,0 +1,31 @@
+.footer {
+  background-color: $color-black-2;
+  color: $color-white;
+  &__links {
+  }
+  &__links-title {
+    color: $color-white;
+  }
+  &__links-title-text {
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+  }
+  &__links-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__links-list-item {
+    & a:link,
+    & a:visited {
+      text-decoration: none;
+      color: $color-white;
+    }
+    & a i {
+      margin-right: 1rem;
+    }
+    & a i.less {
+      margin-right: 0.6rem;
+    }
+  }
+}
