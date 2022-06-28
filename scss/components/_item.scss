@@ -1,0 +1,66 @@
+.item {
+  &:link,
+  &:visited {
+    border-radius: 2rem;
+    background-color: $color-white;
+    text-decoration: none;
+    color: $color-black-1;
+    transition: all 1s;
+  }
+  &:hover,
+  &:hover &__description,
+  &:active,
+  &:active &__description {
+    color: $color-primary;
+    transform: translateY(3px);
+    box-shadow: none;
+  }
+  &:hover &__img,
+  &:active &__img {
+    filter: grayscale(1);
+  }
+  &__img {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+    object-position: center 60%;
+    border-radius: 2rem 2rem 0 0;
+    transition: all 0.5s;
+  }
+  &__description {
+    background-color: $color-white;
+    margin-top: -2rem;
+    padding: 0.2% 5%;
+    border-radius: 0 0 2rem 2rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    box-shadow: 0 0.3rem 0.3rem rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+  }
+  &__description-title {
+    margin: 0;
+    margin-top: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+  &__description-text {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  &__description-like {
+    position: absolute;
+    top: 37%;
+    right: 6%;
+    font-size: 1.8rem;
+    transition: all 0.5s;
+    &:hover {
+      font-weight: 900;
+      background-image: linear-gradient(
+        180deg,
+        $color-secondary,
+        $color-primary
+      );
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+  }
+}
