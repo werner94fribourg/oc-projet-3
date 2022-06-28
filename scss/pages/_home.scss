@@ -1,20 +1,8 @@
 .section-search {
   background-color: $color-grey-light;
-  &__form {
-  }
   &__input {
     background-color: $color-grey-dark;
-    text-align: center;
     color: $color-black-2;
-    position: relative;
-    padding: 1.7rem;
-  }
-  &__input-label {
-    position: absolute;
-    top: 26%;
-    left: 50%;
-    z-index: 100;
-    transform: translateX(-620%);
   }
   &__input-field {
     border: none;
@@ -22,10 +10,7 @@
     padding: 1rem;
     font-size: 1rem;
     font-weight: bold;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-25%);
+    width: 100%;
     &:focus {
       outline: none;
     }
@@ -36,6 +21,11 @@
       color: $color-grey-light;
     }
   }
-  &__title {
+  &__description {
+    width: 70%;
+    margin: 0 auto;
+  }
+  &__text {
+    font-weight: 100;
   }
 }
