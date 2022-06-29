@@ -3,13 +3,20 @@
 @import "abstracts/variables";
 
 @import "base/base";
+@import "base/animations";
 @import "base/utils";
 
 @import "components/button";
 @import "components/section-title";
 @import "components/item";
+@import "components/menu-like";
+@import "components/load-spinner";
 
+@import "layout/animation-apparition";
+@import "layout/animation-show";
 @import "layout/header";
+@import "layout/main";
 @import "layout/footer";
 
 @import "pages/home";
+@import "pages/menu";
