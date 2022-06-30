@@ -46,3 +46,14 @@ $breakpoint values :
     }
   }
 }
+
+/*
+Animation mixin for the menus options
+  $index : index of the animated element
+*/
+
+@mixin animationOption($index) {
+  .animation--#{$index} {
+    animation: appear 0.5s #{$index * 0.2}s ease-in-out backwards;
+  }
+}
