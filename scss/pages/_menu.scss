@@ -16,6 +16,22 @@
   &__title-like {
     font-size: 1.8rem;
   }
+  &__form-field-container {
+    @include respond(tab-land) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
+  }
+  &__form-field {
+    @include respond(tab-land) {
+      width: 47%;
+      display: inline-block;
+    }
+    @include respond(laptop) {
+      width: 31%;
+    }
+  }
   &__form-field-label {
     text-transform: uppercase;
     font-size: 1.4rem;

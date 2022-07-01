@@ -14,18 +14,34 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    @include respond(tab-port) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
   }
   &__links-list-item {
     a:link,
     a:visited {
       text-decoration: none;
       color: $color-white;
+      transition: all 0.8s;
+    }
+    a:hover {
+      color: $color-secondary;
     }
     a i {
       margin-right: 1rem;
     }
     a i.less {
       margin-right: 0.6rem;
+    }
+    @include respond(tab-port) {
+      display: inline-block;
+      width: 49%;
+    }
+    @include respond(laptop) {
+      width: 20%;
     }
   }
 }
