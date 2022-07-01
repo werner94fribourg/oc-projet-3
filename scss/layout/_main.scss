@@ -6,5 +6,9 @@
     object-position: center 60%;
     position: relative;
     z-index: -100;
+    @include respond(tab-port) {
+      object-position: center 90%;
+      height: 40vw;
+    }
   }
 }

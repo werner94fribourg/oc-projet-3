@@ -70,4 +70,16 @@
       animation-delay: 0s;
     }
   }
+  @include respond(tab-port) {
+  transform: translate(-50%, -50%) scale(1.2);
+  }
+  @include respond(tab-land) {
+  transform: translate(-50%, -50%) scale(1.4);
+  }
+  @include respond(laptop) {
+  transform: translate(-50%, -50%) scale(1.6);
+  }
+  @include respond(desk-comp) {
+  transform: translate(-50%, -50%) scale(1.8);
+  }
 }

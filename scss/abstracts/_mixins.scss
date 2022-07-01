@@ -37,7 +37,7 @@ $breakpoint values :
       @content;
     }
   } @else if $breakpoint == laptop {
-    @include respondMin(75em) {
+    @include respondMin(75) {
       @content;
     }
   } @else if $breakpoint == desk-comp {

@@ -12,6 +12,18 @@
 
 html {
   font-size: 100%; //1rem : 16px
+  @include respond(tab-port) {
+    font-size: 120%;
+  }
+  @include respond(tab-land) {
+    font-size: 140%;
+  }
+  @include respond(laptop) {
+    font-size: 160%;
+  }
+  @include respond(desk-comp) {
+    font-size: 180%;
+  }
 }
 
 body {

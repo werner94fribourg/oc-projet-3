@@ -42,4 +42,7 @@
     z-index: -1;
     transition: all 0.2s;
   }
+  @include respond(tab-port) {
+    font-size: 3vw;
+  }
 }

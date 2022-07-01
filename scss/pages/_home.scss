@@ -4,6 +4,11 @@
     background-color: $color-grey-dark;
     color: $color-black-2;
   }
+  &__form {
+    @include respond(tab-port) {
+      font-size: 3vw;
+    }
+  }
   &__input-field {
     border: none;
     background-color: $color-grey-dark;
@@ -11,6 +16,9 @@
     font-size: 1rem;
     font-weight: bold;
     width: 100%;
+    @include respond(tab-port) {
+      font-size: 5vw;
+    }
     &:focus {
       outline: none;
     }
@@ -24,6 +32,9 @@
   &__description {
     width: 70%;
     margin: 0 auto;
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
   &__title {
     font-weight: 900;
@@ -39,6 +50,11 @@
     padding: 0 1rem;
     list-style-type: none;
     counter-reset: list-number;
+    @include respond(tab-land) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
   }
   &__list-item {
     position: relative;
@@ -48,6 +64,16 @@
     box-shadow: 0 0.3rem 0.3rem rgba($color-black-1, 0.2);
     transition: all 0.6s;
     font-weight: 600;
+    font-size: 1.7rem;
+    @include respond(tab-port) {
+      padding: 4vw 8vw;
+    }
+    @include respond(tab-land) {
+      max-width: 100%;
+      font-size: 1rem;
+      padding: 2rem 2.5rem;
+      width: 31%;
+    }
     &:hover {
       transform: translateY(3px);
       box-shadow: none;
@@ -75,19 +101,40 @@
       counter-increment: list-number;
       content: counter(list-number);
       display: inline-block;
-      width: 2rem;
-      height: 2rem;
+      width: 3rem;
+      height: 3rem;
       text-align: center;
       padding-top: 0.5rem;
       color: $color-white;
       position: absolute;
-      left: -1rem;
-      top: 35%;
+      left: -1.5rem;
+      top: 27%;
       background-color: $color-primary;
       border-radius: 50%;
+      @include respond(tab-land) {
+        font-size: 1.5rem;
+        top: -27%;
+        left: 40%;
+      }
     }
     i {
-      margin-right: 1.5rem;
+      margin-right: 2.5rem;
+      @include respond(tab-port) {
+        font-size: 4.5vw;
+        margin-right: 5vw;
+      }
+      @include respond(tab-land) {
+        font-size: 1.6vw;
+        margin-right: 1vw;
+      }
+    }
+    span {
+      @include respond(tab-port) {
+        font-size: 4.5vw;
+      }
+      @include respond(tab-land) {
+        font-size: 1.9vw;
+      }
     }
   }
   &__list-item-content {
@@ -100,5 +147,10 @@
   background-color: $color-grey-light;
   &__content {
     position: relative;
+    @include respond(tab-land) {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+    }
   }
 }
