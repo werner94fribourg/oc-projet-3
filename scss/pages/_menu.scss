@@ -94,6 +94,14 @@
     border-radius: 1rem;
     position: relative;
     overflow: hidden;
+    label {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+      display: inline-block;
+    }
   }
   &__form-field-option-choice-price {
     position: absolute;

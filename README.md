@@ -8,7 +8,7 @@ Projet 3 - Dynamisez une page web avec des animations CSS
 npm run start
 ```
 
-## Build the compressed css file
+## Build the final compressed css file
 
 ```
 npm run build:css
